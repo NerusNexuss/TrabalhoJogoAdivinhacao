@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg;
 
 type
   TForm1 = class(TForm)
@@ -14,7 +15,9 @@ type
     BtnNovoJogo: TButton;
     LbAcertou: TLabel;
     RadioGroup1: TRadioGroup;
+    Image1: TImage;
     procedure BtnAdivinharClick(Sender: TObject);
+    procedure BtnNovoJogoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,6 +26,7 @@ type
 
 var
   Form1: TForm1;
+  Sorteado: Integer;
 
 implementation
 
@@ -46,9 +50,23 @@ end;
 
 procedure TForm1.BtnAdivinharClick(Sender: TObject);
   var
-    AdivinharNumero: integer;
+    AdivinharNumero,Sortear,nivel: integer;
+    resultado:String;
 begin
   AdivinharNumero := StrToInt(EdtNumeroAdivinhar.Text);
+
+
+  if ( AdivinharNumero = Sorteado)
+  resultado := ''
+
+end;
+
+procedure TForm1.BtnNovoJogoClick(Sender: TObject);
+  var
+    nivel: integer;
+begin
+   nivel = (RadioGroup1.ItemIndex);
+   Sorteado := sortearValorSecreto(nivel);
 end;
 
 end.
