@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 611
+  ClientWidth = 825
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 17
+    Top = 9
+    Width = 343
+    Height = 30
+    Caption = 'Adivinhe um n'#250'mero entre 1 e 100'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 8
+    Top = 45
+    Width = 185
+    Height = 105
+    Caption = 'Selecione  a dificuldade'
+    Items.Strings = (
+      'Facil '
+      'M'#233'dio '
+      'D'#237'ficil')
+    TabOrder = 0
+  end
+  object EdtAdivinhar: TEdit
+    Left = 216
+    Top = 56
+    Width = 281
+    Height = 41
+    TabOrder = 1
+  end
+  object BtnAdivinhar: TButton
+    Left = 544
+    Top = 55
+    Width = 129
+    Height = 42
+    Caption = 'Adivinhar '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 216
+    Top = 117
+    Width = 281
+    Height = 25
+    Caption = 'Iniciar Novo Jogo'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+end
