@@ -15,6 +15,7 @@ type
     BtnAdivinhar: TButton;
     BtnNovoJogo: TButton;
     ImgEmoji: TImage;
+    Lbacerto: TLabel;
     LblMensagem: TLabel;
     procedure BtnAdivinharClick(Sender: TObject);
     procedure BtnNovoJogoClick(Sender: TObject);
